@@ -30,6 +30,8 @@ myShuttle.drawShape = function () {
 
 };
 
+myShuttle.speed.y = -3;
+
 // You will also need to do some work to set the speed of the shape. How do you want it to move? What do you need to change to get it to move?
 
 setup = function() {
