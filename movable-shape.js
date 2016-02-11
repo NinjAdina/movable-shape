@@ -11,8 +11,8 @@ var movableShape = {
 	/*
 		Put your shape(s) in drawShape()
 		You can simply override what is here in your sketch.js:
-			myShape.drawShape = function () {
-				// your code goes here
+			"myShape.drawShape = function () {
+				// your code goes here"
 			};
 		It is blank here so the code runs without any revision.
 	*/
@@ -32,12 +32,13 @@ var movableShape = {
 	// If you wanted to build some acceleration in here, you might add a line or two to modify the speed
 	update: function () {
 		this.move();
+		myShuttle.speed.y = -10
 	},
 
 	// Applies speed.x and speed.y to the shape
 	move: function () {
-		this.x += this.speed.x;
-		this.y += this.speed.y;
+		this.x += this.speed.x; // this line is the same as: this.x = this.x + this.speed.x;
+		this.y += this.speed.y; // this line is the same as: this.y = this.y + this.speed.y;
 	}
 
 };
